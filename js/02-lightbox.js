@@ -16,8 +16,8 @@ const lightbox = new SimpleLightbox(".gallery a", {
 
 function createGalleryItems(items) {
     return items.map((item) =>
-        `<a class="gallery__item" href=${picture.original}>
-        <img class="gallery__image" src=${picture.preview} alt=${picture.description} />
+        `<a class="gallery__item" href=${item.original}>
+        <img class="gallery__image" src=${item.preview} alt=${item.description} />
         </a>
     `).join("");
 }

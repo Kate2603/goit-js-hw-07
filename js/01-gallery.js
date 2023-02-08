@@ -35,10 +35,10 @@ function onGalleryClick(evt) {
         `<img src=${evt.target.dataset.source} width="800" height="600" />`,
     {
         onShow: instance => {
-        window.addEventListener('keydown', closeModal);
+        document.addEventListener('keydown', closeModal);
         },
         onClose: instance => {
-        window.removeEventListener('keydown', closeModal);
+        document.removeEventListener('keydown', closeModal);
         },
         });
     

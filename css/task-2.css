@@ -1,0 +1,40 @@
+.back {
+  display: block;
+  max-width: 55px;
+  padding: 10px;
+  margin: 15px;
+  background-color: #e7f3fe;
+  color: #333;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+.back:hover {
+  background-color: #d1e7ff;
+}
+
+.back:active {
+  background-color: #a4c8ff;
+}
+
+.gallery {
+  width: 1128px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+  margin: 100px 156px;
+}
+
+.gallery li {
+  flex: 1 1 calc(33.33% - 10px);
+  box-sizing: border-box;
+}
+
+.gallery img {
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
